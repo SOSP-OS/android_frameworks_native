@@ -48,7 +48,13 @@ cc_library_shared {
 
         "-Wno-switch-enum",
     ],
-
+    product_variables: {
+        sosp: {
+            additional_gralloc_10_usage_bits: {
+                cppflags: ["-DADDNL_GRALLOC_10_USAGE_BITS=%s"],
+            },
+        },
+    },
     sanitize: {
         integer_overflow: true,
     },
