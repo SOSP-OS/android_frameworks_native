@@ -48,6 +48,7 @@ cc_library_shared {
 
         "-Wno-switch-enum",
     ],
+    
     product_variables: {
         sosp: {
             additional_gralloc_10_usage_bits: {
@@ -55,6 +56,7 @@ cc_library_shared {
             },
         },
     },
+    
     sanitize: {
         integer_overflow: true,
     },
